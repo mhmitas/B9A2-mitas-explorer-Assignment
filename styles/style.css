@@ -1,15 +1,90 @@
 /* shared styles */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap');
 
-*{
+* {
     font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-header, main{
-    max-width: 1170px;
-    border: 1px solid ;
+header,
+main {
+    /* width: 1170px; */
+    width: 81.25%;
     margin: 0 auto;
     min-height: 200px;
 }
 
+.common-description {
+    color: #5A5A5D;
+    font-size: 16px;
+    font-weight: 400;
+}
 
+.common-description1 {
+    color: #131318b3;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* banner styles */
+header {
+    border: 1px solid;
+}
+
+.banner {
+    /* border: 2px solid yellow; */
+    background-image: linear-gradient(#00000092, #00000075), url(../Images/bannerimage.png);
+    /* background-image: linear-gradient(#ee82ee83 , #0000ffca), url(../Images/bannerimage.png); */
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    margin-top: 50px;
+}
+
+/* border-radius: 16px;
+background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%); */
+
+.banner-texts {
+    /* border: 2px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 40px;
+}
+
+.banner-heading {
+    color: #FFF;
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.banner-description {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    max-width: 676px;
+}
+
+.inputs-container {
+    max-width: 768px;
+    border: 2px solid red;
+    background-color: #ffffff55;
+    margin-top: 20px;
+}
+
+.inputs {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    border: none;
+    /* margin-top: 10px; */
+}
