@@ -106,3 +106,30 @@ select {
     padding: 16px;
     color: #13131880;
 }
+
+
+
+
+
+
+
+/* responsive styles */
+/* responsive for mobile device */
+
+@media screen and (max-width: 576px) {
+    .inputs-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner-texts {
+        gap: 0;
+    }
+
+    .banner-heading {
+        font-size: 30px;
+    }
+    #banner-d{
+        font-size: 14px;
+    }
+}
