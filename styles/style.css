@@ -124,7 +124,7 @@ select {
     border: 2px solid yellow;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .ul-text {
@@ -146,10 +146,11 @@ select {
     margin-top: 100px;
 }
 
-.destinetion-heading{
+.destinetion-heading {
     text-align: center;
 }
-.destinetion-heading p{
+
+.destinetion-heading p {
     max-width: 643px;
     margin: 0 auto;
 }
@@ -178,9 +179,147 @@ select {
     gap: 24px;
 }
 
-.destinetion-img-container img{
+.destinetion-img-container img {
     width: 100%;
 }
+
+/* choose section styles */
+.choose {
+    margin-top: 100px;
+    border: 2px solid pink;
+}
+
+.card {
+    max-width: 573px;
+    max-height: 284px;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 32px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.card-container img {
+    margin-bottom: 32px;
+}
+
+.card-container h4,
+.newsletter-h4 {
+    color: #131318;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.card-double {
+    display: flex;
+    gap: 24px;
+}
+
+.card-1 {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.card-2 {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.card-3 {
+    border-radius: 16px;
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.choose-paragraph {
+    max-width: 643px;
+    color: rebeccapurple;
+    border: 2px solid pink;
+    margin: 0 auto;
+    margin-bottom: 48px;
+}
+
+.choose-title {
+    text-align: center;
+}
+
+/* perfect place styles start */
+.perfect-place {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.perfect-place-texts {
+    max-width: 532px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.perfect-place-texts ul {
+    margin-left: 20px;
+    margin-bottom: 24px;
+}
+
+.parfect-place-img img {
+    width: 100%;
+    /* min-height: 424px; */
+    height: auto;
+    border-radius: 20px;
+    
+}
+
+/* perfect place styles end */
+
+
+/* .newsletter-section styles */
+
+.newsletter {
+    display: flex;
+    gap: 24px;
+    margin-top: 100px;
+}
+
+.newsletter-texts {
+    max-width: 474px;
+    height: 422px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+    box-sizing: border-box;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inputs {
+    width: 100%;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+}
+
+.subscribe {
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+
+
 
 
 
@@ -201,9 +340,12 @@ select {
         flex-direction: column;
         gap: 16px;
     }
+
     .img-row-1,
     .img-row-2,
     .img-row-3,
+    .card-double,
+    .perfect-place,
     .tours {
         flex-direction: column;
     }
@@ -216,8 +358,24 @@ select {
         font-size: 30px;
     }
 
+    .common-heading {
+        font-size: 25px;
+    }
+
     #banner-d {
         font-size: 14px;
+    }
+
+    .common-description,
+    .common-description1 {
+        font-size: 14px;
+    }
+    .newsletter{
+        flex-direction: column-reverse;
+    }
+    .newsletter-texts{
+        width: 95%;
+        margin: 0 auto;
     }
 
 }
